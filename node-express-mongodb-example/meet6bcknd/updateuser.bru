@@ -1,0 +1,22 @@
+meta {
+  name: updateuser
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5000/api/users/66128b8ea4ec4d0ac62f8c98
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsc2Fhbm5hQGdtYWlsLmNvbSIsInVzZXJJZCI6IjY2MTI4YjhlYTRlYzRkMGFjNjJmOGM5OCIsImlhdCI6MTcxMjYzOTkyNywiZXhwIjoxNzEyNzI2MzI3fQ.VAqVDZQS5uZmNSGlV9aPsNu9N0qQInk9lu-p-r8Lsfs
+}
+
+body:json {
+  {
+    "name": "frost",
+    "email": "svenolaf@gmail.com"
+  }
+}

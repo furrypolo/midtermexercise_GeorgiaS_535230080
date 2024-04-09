@@ -1,0 +1,24 @@
+meta {
+  name: createuser
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVsc2Fhbm5hQGdtYWlsLmNvbSIsInVzZXJJZCI6IjY2MTI4YjhlYTRlYzRkMGFjNjJmOGM5OCIsImlhdCI6MTcxMjYzOTkyNywiZXhwIjoxNzEyNzI2MzI3fQ.VAqVDZQS5uZmNSGlV9aPsNu9N0qQInk9lu-p-r8Lsfs
+}
+
+body:json {
+  {
+    "name": "pompompurin",
+    "email": "pochacco@gmail.com",
+    "password": "cinnamoroll",
+    "confirm_password": "cinnamoroll"
+  }
+}

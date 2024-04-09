@@ -1,0 +1,22 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/api/authentication/login
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDBiYjViM2IwMGE4ZjdhZDdlMWQzIiwiaWF0IjoxNzEyMjE3MjE4LCJleHAiOjE3MTIzMDM2MTh9.2oHhhmK93U5lxQ38cRXi4i-FksSqs-UzgUasOXc93N4
+}
+
+body:json {
+  {
+    "email": "elsaanna@gmail.com",
+    "password": "insummer"
+  }
+}

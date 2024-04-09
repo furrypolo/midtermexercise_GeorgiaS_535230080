@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "meet6bcknd",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
